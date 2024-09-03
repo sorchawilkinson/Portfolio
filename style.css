@@ -1,0 +1,253 @@
+/* Reset margins and padding for the body, and set font family */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style for the navigation bar */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+}
+
+/* Style for Instagram icon in the navigation bar */
+.insta {
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin-top: 6px;
+    margin-right: 6px; 
+}
+
+/* Center the text in contact section and adjust margin */
+.contact {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+/* Remove default list styling and ensure the navigation links are displayed inline */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Style for list items in the navigation bar */
+li {
+    float: left;
+}
+
+/* Style for navigation links and dropdown buttons */
+li a, .dropbtn {
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for navigation links and dropdown buttons */
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+/* Dropdown menu container style */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style for items in the dropdown menu */
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+}
+
+/* Hover effect for dropdown menu items */
+.dropdown-content a:hover {
+    background-color: #111;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main content container style */
+main {
+    background-color: whitesmoke;
+    max-width: 900px;
+    margin: 60px auto 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 3px;
+}
+
+/* Style for contact page with extended height */
+.contact-main {
+    background-color: whitesmoke;
+    max-width: 900px;
+    margin: 60px auto 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    overflow: hidden;
+    min-height: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Style for the thanks message container */
+.thanks-container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Heading 3 style */
+h3 {
+    color: #5f5f5f;
+    font-weight: bold;
+}
+
+/* Heading 5 style */
+h5 {
+    color: #5f5f5f;
+    font-weight: lighter;
+}
+
+/* Heading 6 style */
+h6 {
+    color: #5f5f5f;
+    font-weight: lighter;
+}
+
+/* Style for information section */
+.info {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Grid container for images */
+.image-grid {
+    --gap: 16px;
+    --num-cols: 12;
+    --row-height: 140px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+/* Style for grid items */
+.image-grid > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column: span 12;
+    grid-row: span 4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for images in the grid */
+.image-grid > img,
+.image-grid a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Column and row span classes */
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.row-4 {
+    grid-row: span 4;
+}
+
+.row-5 {
+    grid-row: span 5;
+}
+
+.row-6 {
+    grid-row: span 6;
+}
+
+.row-3 {
+    grid-row: span 3;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* Additional styles for image grid (if needed) */
+.image-grid {
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 1fr;
+}
+
+.grid-item {
+    grid-column: span 12;
+    grid-row: span 4;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for links */
+a {
+    color: #5f5f5f;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
